@@ -21,9 +21,13 @@ theme = "crisp"
     weight = -90
     url = "/rbspy-vs-stackprof/"
 [[menu.main]]
+    name = "Getting help"
+    weight = -80
+    url = "/getting-help/"
+[[menu.main]]
     pre= "<i class='fa fa-github fa-1x'></i> "
     name = "GitHub"
-    weight = -80
+    weight = -70
     url = "https://github.com/rbspy/rbspy"
 [[menu.profiling]]
     name = "About the guide"

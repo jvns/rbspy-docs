@@ -95,6 +95,20 @@ $ cat summary.txt
 
 # FAQ
 
+## Who makes rbspy?
+
+[Julia Evans](https://jvns.ca) started the project and is the primary maintainer.
+For a full list of contributors, see [the github repo](https://github.com/rbspy/rbspy)
+
+## Who funds rbspy?
+
+Initial rbspy development was funded by [the Segment Open Fellowship](https://segment.com/blog/segment-open-fellowship-2017/) -- they paid for 3 months of
+development on the project, to take it from a sketchy prototype to an actual working profiler that
+people use to make their Ruby programs faster. Julia took a 3 month sabbatical off work to build it.
+
+This kind of short-term funding is an awesome way to bootstrap new open source projects that might
+not happen otherwise! You can do a lot in 3 months :)
+
 ## Can I use rbspy in production?
 
 Yes! rbspy does not add any overhead to your Ruby programs -- it only reads memory from the Ruby

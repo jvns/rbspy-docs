@@ -155,6 +155,10 @@ threads that are not currently running.
 
 Not yet. Any calls into C will be reported as "unknown C function".
 
+## I love rbspy! How can I thank you?
+
+It really helps if you add a comment to our [list of testimonials on GitHub](https://github.com/rbspy/rbspy/issues/62) saying how rbspy helped you!
+
 ## Is there a similar project for Python?
 
 Yes! [pyflame](https://github.com/uber/pyflame) by [Evan Klitzke](https://eklitzke.org/) does

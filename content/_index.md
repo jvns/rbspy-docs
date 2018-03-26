@@ -1,8 +1,8 @@
 # rbspy
 
-Have a running Ruby program that you want to profile? Don't want to do extra work to install
-profiling gems? You want `rbspy`! rbspy can profile any Ruby program just by running 1 simple
-command.
+Have a running Ruby program that you want to profile without restarting it? Want to profile a Ruby
+command line program really easily? You want `rbspy`! rbspy can profile any Ruby program just by
+running 1 simple command.
 
 `rbspy` lets you profile Ruby processes that are already running. You give it a PID, and it starts
 profiling. It's a sampling profiler, which means it's **low overhead** and **safe to run in

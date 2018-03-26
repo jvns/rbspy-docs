@@ -1,5 +1,5 @@
 baseurl = "https://rbspy.github.io/"
-title = "rbspy"
+title = "rbspy documentation"
 languageCode = "en-us"
 theme = "crisp"
 [params]

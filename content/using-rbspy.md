@@ -155,6 +155,11 @@ threads that are not currently running.
 
 Not yet. Any calls into C will be reported as "unknown C function".
 
+## Is there a similar project for Python?
+
+Yes! [pyflame](https://github.com/uber/pyflame) by [Evan Klitzke](https://eklitzke.org/) does
+basically the same thing as rbspy, but for Python programs.
+
 ## Who made the logo?
 
 [Ashley McNamara](https://twitter.com/ashleymcnamara) was extremely kind and designed it!! She's an

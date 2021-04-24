@@ -90,7 +90,7 @@ $ sudo rbspy record --raw-file raw.gz ruby ci/ruby-programs/short_program.rb
 $ rbspy report -f summary -i raw.gz -o summary.txt
 $ cat summary.txt
 % self  % total  name
-100.00   100.00  <c function> - unknown
+100.00   100.00  sleep [c function] - (unknown)
   0.00   100.00  ccc - ci/ruby-programs/short_program.rb
   0.00   100.00  bbb - ci/ruby-programs/short_program.rb
   0.00   100.00  aaa - ci/ruby-programs/short_program.rb

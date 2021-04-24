@@ -62,7 +62,7 @@ you're user `bork` and run `sudo rbspy record ruby script.rb`. You can disable t
 
 These work regardless of how you started the recording. 
 
- * `--rate`: Specifies the frequency of that stack traces are recorded. The interval is determined by `1000/rate`. The default rate is 100hz.
+ * `--rate`: Specifies the number of stack traces that are sampled per second. The default rate is 100hz.
  * `--duration`: Specifies how long to run before stopping rbspy. This conficts with running a subcommand (`rbspy record ruby myprogram.rb`).
  * `--format`: Specifies what format to use to report profiling data. The options are:
    * `flamegraph`: generates a flamegraph SVG that you can view in a browser
@@ -71,8 +71,10 @@ These work regardless of how you started the recording.
    * `summary`: aggregates % self and % total times by function. Useful to get a basic overview
    * `summary_by_line`: aggregates % self and % total times by line number. Especially useful when
       there's 1 line in your program which is taking up all the time.
- * `--file`: Specifies where rbspy will save formatted output. 
+ * `--file`: Specifies where rbspy will save formatted output.
  * `--raw-file`: Specifies where rbspy will save formatted data. Use a gz extension because it will be gzipped.
+ * `--flame-min-width`: Specifies the minimum flame width in flamegraphs as a percentage. Useful for excluding functions that appear in a small number of samples.
+ * `--nonblocking`: Don't pause the ruby process when collecting stack samples. Setting this option will reduce the performance impact of sampling but may produce inaccurate results.
 
 ## Report
 

@@ -113,13 +113,16 @@ not happen otherwise! You can do a lot in 3 months :)
 
 ## Can I use rbspy in production?
 
-Yes! rbspy does not add any overhead to your Ruby programs -- it only reads memory from the Ruby
-process you're monitoring, it doesn't make any changes. Unlike some other statistical profilers,
-rbspy does **not** use signals or ptrace, so it won't interrupt system calls your Ruby program is
-making.
+Yes! rbspy only reads memory from the Ruby process you're monitoring, it doesn't make any changes.
+Unlike some other statistical profilers, rbspy does **not** use signals or ptrace, so it won't
+interrupt system calls your Ruby program is making.
 
-The only two things to be aware of are:
+The things to be aware of are:
 
+* By default, `rbspy` 0.6 and newer pauses the ruby process when it's collecting samples. This can
+  affect performance, especially if you're using a high sampling rate. You can disable the pausing
+  with the `--nonblocking`, but be aware that this can lead to incorrect samples.
+  flag.
 * `rbspy` does use some CPU. If you use `rbspy record --subprocesses`, it can use a substantial
   amount of CPU (because it'll start a separate thread for every process it's recording)
 * disk usage: `rbspy record` will save a data file to disk with compressed stack traces, and if you
@@ -132,20 +135,6 @@ Any bugs in rbspy will manifest as rbspy crashing, not your Ruby program crashin
 
 On Linux, it uses the `process_vm_readv` system call, which lets you read memory from any other
 running process.
-
-## Doesn't not pausing the Ruby process cause errors?
-
-Yep!
-
-rbspy does not stop your Ruby processes to collect information about what it's doing. This is for
-both performance reasons and general production-safety reasons -- only **reading** from your Ruby
-processes and not altering them in any way means that rbspy is safer to run on production Ruby
-applications. rbspy does not use ptrace or signals.
-
-This means that sometimes rbspy will try to read a stack trace out of a Ruby process, there will be
-a race, and the memory of that process will temporarily be in an invalid state which means rbspy
-can't collect its stack. `rbspy record` handles this by just dropping that stack trace and trying
-again later.
 
 ## How does rbspy handle threads?
 

@@ -75,6 +75,8 @@ These work regardless of how you started the recording.
  * `--raw-file`: Specifies where rbspy will save formatted data. Use a gz extension because it will be gzipped.
  * `--flame-min-width`: Specifies the minimum flame width in flamegraphs as a percentage. Useful for excluding functions that appear in a small number of samples.
  * `--nonblocking`: Don't pause the ruby process when collecting stack samples. Setting this option will reduce the performance impact of sampling but may produce inaccurate results.
+ * `--subprocesses`: Record all subprocesses of the given PID or command.
+ * `--silent`: Don't print the summary profiling data every second.
 
 ## Report
 

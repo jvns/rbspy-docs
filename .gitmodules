@@ -2,3 +2,6 @@
 	path = public
 	url = git@github.com:rbspy/rbspy.github.io.git
 	branch = master
+[submodule "themes/crisp"]
+	path = themes/crisp
+	url = https://github.com/Zenithar/hugo-theme-crisp.git

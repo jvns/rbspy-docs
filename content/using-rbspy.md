@@ -60,7 +60,7 @@ you're user `bork` and run `sudo rbspy record ruby script.rb`. You can disable t
 
 ### Optional Arguments
 
-These work regardless of how you started the recording. 
+These work regardless of how you started the recording.
 
  * `--rate`: Specifies the number of stack traces that are sampled per second. The default rate is 100hz.
  * `--duration`: Specifies how long to run before stopping rbspy. This conficts with running a subcommand (`rbspy record ruby myprogram.rb`).

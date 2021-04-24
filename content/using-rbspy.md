@@ -142,6 +142,8 @@ running process.
 This is because the GIL only allows one thread to be running Ruby code at any given time. It ignores
 threads that are not currently running.
 
+When rbspy is profiling ruby 3 programs, it currently only samples the main ractor.
+
 ## Can rbspy profile C extensions?
 
 Yes. Any calls into C will be reported in the format "sleep [c function] - (unknown)".

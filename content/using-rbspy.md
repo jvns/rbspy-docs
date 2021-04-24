@@ -155,7 +155,7 @@ threads that are not currently running.
 
 ## Can rbspy profile C extensions?
 
-Not yet. Any calls into C will be reported as "unknown C function".
+Yes. Any calls into C will be reported in the format "sleep [c function] - (unknown)".
 
 ## I love rbspy! How can I thank you?
 

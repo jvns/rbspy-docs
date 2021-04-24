@@ -163,7 +163,7 @@ It really helps if you add a comment to our [list of testimonials on GitHub](htt
 
 ## Is there a similar project for Python?
 
-Yes! [pyflame](https://github.com/uber/pyflame) by [Evan Klitzke](https://eklitzke.org/) does
+Yes! [py-spy](https://github.com/benfred/py-spy) by [Ben Frederickson](https://www.benfrederickson.com/) and [pyflame](https://github.com/uber/pyflame) by [Evan Klitzke](https://eklitzke.org/) do
 basically the same thing as rbspy, but for Python programs.
 
 ## Who made the logo?

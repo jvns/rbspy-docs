@@ -35,4 +35,4 @@ Here's what running `rbspy record` on a Rubocop process looks like. You'll see a
 what the top functions being run are, and it also saves the raw data + a flamegraph for more in
 depth analysis.
 
-<img src="/rbspy-record.gif">
+![rbspy record demo](rbspy-record.gif)

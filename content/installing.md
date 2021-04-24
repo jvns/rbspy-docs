@@ -8,8 +8,8 @@ url = "/installing/"
 
 ### Download a binary
 
-Installing rbspy is easy: it's a single static binary. There are binaries for Linux and Mac, which
-are the two supported platforms.
+Installing rbspy is easy: it's a single static binary. There are binaries for Linux, Mac, and Windows, which
+are the three supported platforms. It's also possible to build rbspy on FreeBSD.
 
 1. Download the latest release from [the releases page](https://github.com/rbspy/rbspy/releases)
 2. Unzip + move the rbspy binary to `/usr/local/bin/rbspy`

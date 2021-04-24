@@ -29,5 +29,6 @@ curl -sSf https://static.rust-lang.org/rustup.sh | sh
 ```
 git clone https://github.com/rbspy/rbspy
 cd rbspy
-cargo install
+cargo build --release
+./target/release/rbspy --help
 ```

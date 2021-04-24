@@ -101,8 +101,9 @@ $ cat summary.txt
 
 ## Who makes rbspy?
 
-[Julia Evans](https://jvns.ca) started the project and is the primary maintainer.
-For a full list of contributors, see [the github repo](https://github.com/rbspy/rbspy)
+[Julia Evans](https://jvns.ca) started the project and led its development until 2021.
+[Adam Jensen](https://acj.sh) is the primary maintainer. For a full list of contributors,
+see the [CONTRIBUTORS file](https://github.com/rbspy/rbspy/blob/master/CONTRIBUTORS.md).
 
 ## Who funds rbspy?
 

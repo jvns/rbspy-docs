@@ -99,6 +99,30 @@ $ cat summary.txt
   0.00   100.00  <main> - ci/ruby-programs/short_program.rb
 ```
 
+# Containers
+
+If you want to profile a ruby program that's running in a container on Linux, be sure to add the
+`SYS_PTRACE` capability. For Docker containers, this can be done by adding a flag to the command
+when you launch the container:
+
+```
+docker run --cap-add=SYS_PTRACE ...
+```
+
+If you're using Kubernetes, you can add the ptrace capability to a deployment like this:
+
+```
+securityContext:
+  capabilities:
+    add:
+      - SYS_PTRACE
+```
+
+If this doesn't work for you, see [issue 325](https://github.com/rbspy/rbspy/issues/325) for
+troubleshooting steps. You may need additional `securityContext` configuration if the processes
+in your container are running as an unprivileged (non-root) user, which is recommended for security
+reasons.
+
 # FAQ
 
 ## Who makes rbspy?

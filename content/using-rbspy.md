@@ -168,7 +168,7 @@ running process.
 ## How does rbspy handle threads?
 
 `rbspy` always collects the stack from what the Ruby VM reports as the currently running thread.
-This is because the GIL only allows one thread to be running Ruby code at any given time. It ignores
+This is because the global VM lock (GVL) only allows one thread to be running Ruby code at any given time. It ignores
 threads that are not currently running.
 
 When rbspy is profiling ruby 3 programs, it currently only samples the main ractor.
